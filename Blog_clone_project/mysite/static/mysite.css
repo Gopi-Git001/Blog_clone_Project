@@ -1,73 +1,189 @@
-.techfont{
-  font-family: 'Russo One', sans-serif;
-  font-size: 1.5em;
-  margin-bottom: 10px;
+/* mysite.css */
+
+/* Import professional IT fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@400;700&display=swap'); */
+
+/* Updated Body Background and Font */
+body.loader {
+    background: url('{% static "images/pexels-francesco-ungaro-998641.jpg" %}') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #ffffff; /* White text for contrast */
 }
 
-.postdate{
-  text-align: center;
+/* Navbar enhancements */
+.navbar.bg-light {
+    background: rgba(0, 0, 0, 0.7) !important; /* Semi-transparent dark background */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    padding: 0.8rem 0;
 }
 
-.posttitle{
-  font-family: 'Russo One', sans-serif;
-  font-size: 3em;
-  text-align: center;
+.techfont {
+    font-family: 'Roboto Slab', serif; /* Professional heading font */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ffffff;
 }
 
-.postcontent{
-  font-family: 'Montserrat';
-  font-size: 1.5em;
+.bigbrand {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
+    color: #ffffff !important;
+    transition: all 0.3s ease;
 }
 
-.centerstage{
-  margin-left: auto;
-  margin-right: auto;
+/* Post styling enhancements */
+.postdate {
+    text-align: center;
+    color: #cccccc;
+    font-size: 0.9em;
 }
 
-.btn-comment{
-  position: absolute;
-  right: 0px;
+.posttitle {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5em;
+    text-align: center;
+    color: #ffffff;
+    margin: 2rem 0;
 }
 
-.bigbrand{
-  font-size: 1.5em;
+.postcontent {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #ffffff;
 }
 
-
-/*COLOR CHANGER*/
-/*Credit and Source: http://codepen.io/thapliyalshivam/pen/dvgXVO*/
-.loader{
-  filter:hue-rotate(0deg);
-  color: linear-gradient(45deg,#0f8,#08f);
-  animation:hue 5000ms infinite linear;
+.centerstage {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
 }
 
-@keyframes spinify {
-  0% {
-    transform: translate(0px,0px);
-
-  }
-  33% {
-    transform: translate(0px,24px);
-    border-radius:100%;
-    width:10px;
-    height:10px;
-
-  }
-   66% {
-    transform:translate(0px,-16px);
-  }
-
-   88% {
-    transform:translate(0px,4px);
-
-  }
-  100% {
-    transform:translate(0px,0px);
-  }
+/* Button enhancements */
+.btn-comment {
+    position: absolute;
+    right: 0;
+    background: #2196f3 !important;
+    border-radius: 4px;
+    padding: 8px 20px;
+    color: #ffffff;
 }
-@keyframes hue{
-  0%{filter: hue-rotate(0deg);}
-  100%{filter:hue-rotate(360deg);}
 
+/* Modern card styling for posts */
+.blog_posts .post {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.6); /* Dark, transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    transition: transform 0.2s ease;
+}
+
+.blog_posts .post:hover {
+    transform: translateY(-3px);
+}
+
+/* Professional enhancements for content container */
+.content.container {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+}
+
+/* Navbar link styling */
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    padding: 0.5rem 1.2rem !important;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-nav {
+        margin-top: 1rem;
+    }
+    .nav-link {
+        margin: 0.3rem 0;
+    }
+    .content.container {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    .posttitle {
+        font-size: 2em;
+    }
+}
+
+/* Login Page Customization (Google-like style) */
+.jumbotron {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    padding: 2rem;
+    margin: 5rem auto;
+    max-width: 400px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #ffffff;
+}
+
+.jumbotron h1 {
+    font-size: 1.8em;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.jumbotron h2 {
+    font-size: 1.2em;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+
+.jumbotron form {
+    margin-top: 1rem;
+}
+
+.jumbotron input[type="text"],
+.jumbotron input[type="password"],
+.jumbotron input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 0.5rem 0;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 4px;
+    font-size: 0.9em;
+    background: transparent;
+    color: #ffffff;
+}
+
+.jumbotron input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4285F4; /* Google blue */
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.jumbotron input[type="submit"]:hover {
+    background-color: #357ae8;
 }
