@@ -37,7 +37,7 @@ body.loader {
 /* Post styling enhancements */
 .postdate {
     text-align: center;
-    color: #cccccc;
+    color: #ffffff;
     font-size: 0.9em;
 }
 
@@ -81,6 +81,7 @@ body.loader {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.5);
     transition: transform 0.2s ease;
+    color: #ffffff
 }
 
 .blog_posts .post:hover {
