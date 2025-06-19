@@ -90,3 +90,5 @@ def comment_remove(request,pk):
     post_pk = comment.post.pk
     comment.delete()
     return redirect('post_detail',pk = post_pk)
+
+#GopiRam
